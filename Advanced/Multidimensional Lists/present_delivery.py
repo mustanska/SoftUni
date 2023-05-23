@@ -43,6 +43,8 @@ size = int(input())
 
 neighborhood = []
 santa_position = []
+total_nice_kids = 0
+happy_nice_kids = 0
 
 moves = {
     "left": (0, -1),
@@ -50,9 +52,6 @@ moves = {
     "up": (-1, 0),
     "down": (1, 0),
 }
-
-total_nice_kids = 0
-happy_nice_kids = 0
 
 for row in range(size):
     neighborhood.append(input().split())
