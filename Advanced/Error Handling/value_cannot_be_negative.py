@@ -1,3 +1,5 @@
+#The comment was added in the class because the condition
+
 class ValueCannotBeNegative(Exception):
     """ValueCannotBeNegative"""
     pass
