@@ -2,9 +2,9 @@ import os
 import re
 
 root_path = os.path.dirname(os.path.abspath(__file__))
-words_file_path = os.path.join(root_path, "words.txt")
-text_file_path = os.path.join(root_path, "input.txt")
-result_file_path = os.path.join(root_path, "output.txt")
+words_file_path = os.path.join(root_path, "Text Files", "words.txt")
+text_file_path = os.path.join(root_path, "Text Files", "input.txt")
+result_file_path = os.path.join(root_path, "Text Files", "output.txt")
 
 word_count = {}
 

@@ -3,7 +3,7 @@ import os
 characters = ("-", ",", ".", "!", "?")
 
 root_path = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(root_path, "text.txt")
+file_path = os.path.join(root_path, "Text Files", "text.txt")
 
 with open(file_path, "r") as file:
     rows = file.readlines()

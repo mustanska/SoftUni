@@ -2,8 +2,8 @@ import os
 from string import punctuation
 
 root_path = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(root_path, "text.txt")
-result_file_path = os.path.join(root_path, "output.txt")
+file_path = os.path.join(root_path, "Text Files", "text.txt")
+result_file_path = os.path.join(root_path, "Text Files", "output.txt")
 
 with open(file_path, "r") as file:
     rows = file.readlines()
