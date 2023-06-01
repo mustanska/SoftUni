@@ -29,7 +29,7 @@ while True:
     break
 
 with open(os.path.join(directory, "report.txt"), "w") as report_file:
-    for key, values in files.items():
+    for key, values in sorted(files.items()):
         result = f".{key}\n"
-        result += "".join([f"- - - {file}\n" for file in values])
+        result += "".join([f"- - - {file}\n" for file in sorted(values)])
         report_file.write(result)
