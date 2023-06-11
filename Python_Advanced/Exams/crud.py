@@ -1,23 +1,23 @@
 SIZE = 6
 
 
-def operation_perform(command_info):
-    row = position[0] + directions[command_info[1]][0]
-    col = position[1] + directions[command_info[1]][1]
+def operation_perform(operation, direction, value=""):
+    row = position[0] + directions[direction][0]
+    col = position[1] + directions[direction][1]
 
-    if command_info[0] == "Create":
+    if operation == "Create":
         if matrix[row][col] == ".":
-            matrix[row][col] = command_info[2]
+            matrix[row][col] = value
 
-    elif command_info[0] == "Update":
+    elif operation == "Update":
         if matrix[row][col].isalnum():
-            matrix[row][col] = command_info[2]
+            matrix[row][col] = value
 
-    elif command_info[0] == "Delete":
+    elif operation == "Delete":
         if matrix[row][col].isalnum():
             matrix[row][col] = "."
 
-    elif command_info[0] == "Read":
+    elif operation == "Read":
         if matrix[row][col].isalnum():
             print(matrix[row][col])
 
@@ -38,7 +38,7 @@ directions = {
 }
 
 while command != "Stop":
-    position = operation_perform(command.split(", "))
+    position = operation_perform(*command.split(", "))
 
     command = input()
 
