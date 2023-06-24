@@ -159,3 +159,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .idea/.name
+Python_OOP/.idea/inspectionProfiles/profiles_settings.xml
+Python_OOP/.idea/inspectionProfiles/Project_Default.xml
+Python_OOP/.idea/misc.xml
+Python_OOP/.idea/modules.xml
+Python_OOP/.idea/Python_OOP.iml
+Python_OOP/.idea/vcs.xml
