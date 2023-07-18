@@ -17,7 +17,7 @@ class Controller:
         self.aquariums: list = []
 
     def add_aquarium(self, aquarium_type: str, aquarium_name: str) -> str:
-        if aquarium_type not in Controller.valid_aquariums:
+        if not Controller.valid_aquariums.get(aquarium_type):
             return "Invalid aquarium type."
 
         aquarium = Controller.valid_aquariums[aquarium_type](aquarium_name)
@@ -26,7 +26,7 @@ class Controller:
         return f"Successfully added {aquarium_type}."
 
     def add_decoration(self, decoration_type: str) -> str:
-        if decoration_type not in Controller.valid_decorations:
+        if not Controller.valid_decorations.get(decoration_type):
             return "Invalid decoration type."
 
         decoration = Controller.valid_decorations[decoration_type]()
@@ -48,7 +48,7 @@ class Controller:
                 return f"Successfully added {decoration_type} to {aquarium_name}."
 
     def add_fish(self, aquarium_name: str, fish_type: str, fish_name: str, fish_species: str, price: float) -> str:
-        if fish_type not in Controller.valid_fishes:
+        if not Controller.valid_fishes.get(fish_type):
             return f"There isn't a fish of type {fish_type}."
 
         fish = Controller.valid_fishes[fish_type](fish_name, fish_species, price)
