@@ -37,7 +37,7 @@ class Manager:
         self.worker = worker
 
     def manage(self):
-        if self.worker is not None:
+        if self.worker:
             self.worker.work()
 
 
