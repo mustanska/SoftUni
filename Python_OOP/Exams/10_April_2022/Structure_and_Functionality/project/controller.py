@@ -57,8 +57,8 @@ class Controller:
         return "\n".join(result)
 
     def duel(self, first_player_name: str, second_player_name: str) -> str:
-        fp = [p for p in self.players if p.name == first_player_name][0]
-        sp = [p for p in self.players if p.name == second_player_name][0]
+        fp = next(filter(lambda p: p.name == first_player_name, self.players))
+        sp = next(filter(lambda p: p.name == second_player_name, self.players))
 
         result = self.check_stamina_players(fp, sp)
 
