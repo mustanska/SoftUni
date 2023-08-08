@@ -1,4 +1,4 @@
-from typing import Any, List, Sequence
+from typing import Any, List, Sequence, Dict, Optional
 
 
 class CustomList:
@@ -6,12 +6,12 @@ class CustomList:
         self.__list: List[Any] = [*args]
 
     def __check_index(self, index):
-        if not (0 <= index < len(self.__list) or (-len(self.__list) <= index < 0)):
+        if not (0 <= index < self.size() or (self.size() <= index < 0)):
             raise IndexError("The index is out of range!")
 
     def __find_indices_by_value(self, value):
         try:
-            indices = [i for i in range(len(self.__list)) if self.__list[i] == value]
+            indices = [i for i in range(self.size()) if self.__list[i] == value]
             return indices
         except IndexError:
             raise ValueError("The value does not exist in the list.")
@@ -21,6 +21,9 @@ class CustomList:
             [element for element in obj]
         except TypeError:
             raise ValueError("This object is not iterable!")
+
+    def __get_values_of_elements(self):
+        return [el if isinstance(el, int) or isinstance(el, float) else len(el) for el in self.__list]
 
     def append(self, value: Any) -> List[Any]:
         self.__list.append(value)
@@ -61,6 +64,48 @@ class CustomList:
 
     def copy(self) -> List[Any]:
         return self.__list.copy()
+
+    def size(self) -> int:
+        return len(self.__list)
+
+    def add_first(self, value) -> None:
+        self.__list.insert(0, value)
+
+    def dictionize(self) -> Dict[Any, Any]:
+        """
+        Returns the list as a dictionary
+        with KEYS - elements (with hashable type) on an even positions,
+        and VALUES - elements on an odd positions or ' '.
+        The element as a key with an unhashable type and the next element as a value will not be included.
+        """
+
+        custom_list_dict = {}
+
+        for i in range(0, self.size(), 2):
+            try:
+                custom_list_dict[self.__list[i]] = self.__list[i + 1] if i + 1 < self.size() else " "
+            except TypeError:
+                ...
+
+        return custom_list_dict
+
+    def move(self, amount: int) -> List[Any]:
+        first_part = self.__list[:amount]
+        second_part = self.__list[amount:]
+        self.__list = second_part + first_part
+
+        return self.__list
+
+    def sum(self) -> int or float:
+        return sum(self.__get_values_of_elements())
+
+    def overbound(self) -> int:
+        max_value = max(self.__get_values_of_elements())
+        return self.__get_values_of_elements().index(max_value)
+
+    def underbound(self) -> int:
+        min_value = min(self.__get_values_of_elements())
+        return self.__get_values_of_elements().index(min_value)
 
     def __repr__(self):
         return f"[{', '.join([str(arg) for arg in self.__list])}]"
