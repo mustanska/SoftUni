@@ -1,4 +1,4 @@
-from typing import Any, List, Sequence, Dict, Optional
+from typing import Any, List, Sequence, Dict
 
 
 class CustomList:
