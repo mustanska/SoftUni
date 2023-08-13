@@ -15,8 +15,8 @@ class CustomList:
             return indices
         except IndexError:
             raise ValueError("The value does not exist in the list.")
-
-    def __check_iterable_object(self, obj):
+    @staticmethod
+    def __check_iterable_object(obj):
         try:
             [element for element in obj]
         except TypeError:
