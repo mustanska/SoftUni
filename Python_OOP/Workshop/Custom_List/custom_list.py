@@ -100,12 +100,40 @@ class CustomList:
         return sum(self.__get_values_of_elements())
 
     def overbound(self) -> int:
-        max_value = max(self.__get_values_of_elements())
-        return self.__get_values_of_elements().index(max_value)
+        given_list = self.__get_values_of_elements()
+        max_value = max(given_list)
+        return given_list.index(max_value)
 
     def underbound(self) -> int:
-        min_value = min(self.__get_values_of_elements())
-        return self.__get_values_of_elements().index(min_value)
+        given_list = self.__get_values_of_elements()
+        min_value = min(given_list)
+        return given_list.index(min_value)
+
+    def sort(self, reverse=False) -> List[Any]:
+        """
+        MODIFIES and RETURNS the given list sorted by element value if the value is a number,
+        otherwise takes its length in ascending order.
+        If the reverse parameter is True, the list will be MODIFIED and RETURNED in descending order.
+        """
+
+        sorted_list = []
+        given_list = self.__get_values_of_elements()
+        max_value = max(given_list)
+        max_value_index = given_list.index(max_value)
+
+        while len(sorted_list) < len(given_list) - 1:
+            min_value_index = given_list.index(min(given_list))
+            sorted_list.append(self.__list[min_value_index])
+            given_list[min_value_index] = max_value
+        else:
+            sorted_list.append(self.__list[max_value_index])
+
+        self.__list = sorted_list
+
+        if reverse:
+            self.__list = self.reverse()
+
+        return self.__list
 
     def __repr__(self):
         return f"[{', '.join([str(arg) for arg in self.__list])}]"
