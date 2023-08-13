@@ -118,15 +118,12 @@ class CustomList:
 
         sorted_list = []
         given_list = self.__get_values_of_elements()
-        max_value = max(given_list)
-        max_value_index = given_list.index(max_value)
 
-        while len(sorted_list) < len(given_list) - 1:
+        while given_list:
             min_value_index = given_list.index(min(given_list))
             sorted_list.append(self.__list[min_value_index])
-            given_list[min_value_index] = max_value
-        else:
-            sorted_list.append(self.__list[max_value_index])
+            given_list.pop(min_value_index)
+            self.remove(min_value_index)
 
         self.__list = sorted_list
 
