@@ -64,11 +64,24 @@ class TestCustomList(TestCase):
         result = self.custom_list._CustomList__is_empty_value([1, 2, 3])
         self.assertFalse(result)
 
+    def test_check_empty_element_to_add_raises(self):
+        with self.assertRaises(ValueError) as ve:
+            self.custom_list._CustomList__check_element_to_add([])
+        self.assertEqual("Element cannot be empty!", str(ve.exception))
+
+        with self.assertRaises(ValueError) as ve:
+            self.custom_list._CustomList__check_element_to_add(None)
+        self.assertEqual("Element cannot be empty!", str(ve.exception))
+
+        with self.assertRaises(ValueError) as ve:
+            self.custom_list._CustomList__check_element_to_add("")
+        self.assertEqual("Element cannot be empty!", str(ve.exception))
+
     def test_get_values_of_elements_in_custom_list(self):
         result = self.custom_list._CustomList__get_values_of_elements()
         expected = [1, 5, 3, 3, 5.5, 8, 2, 3, -2]
         self.assertEqual(expected, result)
 
-    
+
 if __name__ == "__main__":
     main()
