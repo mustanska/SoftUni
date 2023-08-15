@@ -12,8 +12,7 @@ class CustomList:
     @list.setter
     def list(self, args):
         for element in args:
-            if self.__is_empty_value(element):
-                raise ValueError("Element cannot be empty!")
+            self.__check_element_to_add(element)
 
         self.__list = list(args)
 
@@ -42,10 +41,15 @@ class CustomList:
             return False
         return True
 
+    def __check_element_to_add(self, value):
+        if self.__is_empty_value(value):
+            raise ValueError("Element cannot be empty!")
+
     def __get_values_of_elements(self):
         return [el if isinstance(el, int) or isinstance(el, float) else len(el) for el in self.list]
 
     def append(self, value: Any) -> List[Any]:
+        self.__check_element_to_add(value)
         self.list.append(value)
         return self.list
 
