@@ -31,7 +31,7 @@ class TestCustomList(TestCase):
 
     def test_index_validity_raises(self):
         with self.assertRaises(IndexError) as ie:
-            self.custom_list._CustomList__check_index(10)
+            self.custom_list._CustomList__check_index(20)
 
         self.assertEqual("Index is out of range!", str(ie.exception))
 
@@ -70,10 +70,6 @@ class TestCustomList(TestCase):
         self.assertEqual("Element cannot be empty!", str(ve.exception))
 
         with self.assertRaises(ValueError) as ve:
-            self.custom_list._CustomList__check_element_to_add(None)
-        self.assertEqual("Element cannot be empty!", str(ve.exception))
-
-        with self.assertRaises(ValueError) as ve:
             self.custom_list._CustomList__check_element_to_add("")
         self.assertEqual("Element cannot be empty!", str(ve.exception))
 
@@ -81,6 +77,25 @@ class TestCustomList(TestCase):
         result = self.custom_list._CustomList__get_values_of_elements()
         expected = [1, 5, 3, 3, 5.5, 8, 2, 3, -2]
         self.assertEqual(expected, result)
+
+    def test_append_element_to_list(self):
+        with self.assertRaises(ValueError) as ve:
+            self.custom_list.append(None)
+        self.assertEqual("Element cannot be empty!", str(ve.exception))
+
+        result = self.custom_list.append(2)
+        excepted = [1, "hello", 3, [2, 3, 4], 5.5, 8, (1, "me"), 3, -2, 2]
+        self.assertEqual(excepted, result)
+
+    def test_remove_element_from_list(self):
+        with self.assertRaises(IndexError) as ie:
+            self.custom_list.remove(10)
+        self.assertEqual("Index is out of range!", str(ie.exception))
+
+        result = self.custom_list.remove(5)
+        excepted = [1, "hello", 3, [2, 3, 4], 5.5, (1, "me"), 3, -2]
+        self.assertEqual(excepted, self.custom_list.list)
+        self.assertEqual(8, result)
 
 
 if __name__ == "__main__":
