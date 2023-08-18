@@ -17,7 +17,7 @@ class CustomList:
         self.__list = list(args)
 
     def __check_index(self, index):
-        if not (0 <= index < self.size() or (self.size() <= index < 0)):
+        if not (0 <= index < self.size() or (-self.size() <= index < 0)):
             raise IndexError("Index is out of range!")
 
     def __find_indices_by_value(self, value):
