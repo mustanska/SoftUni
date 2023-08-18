@@ -81,7 +81,12 @@ class CustomList:
         return self.__find_indices_by_value(value)[0]
 
     def count(self, value: Any) -> int:
-        return len(self.__find_indices_by_value(value))
+        try:
+            count = len(self.__find_indices_by_value(value))
+        except ValueError:
+            count = 0
+
+        return count
 
     def reverse(self) -> List[Any]:
         return self.list[::-1]
