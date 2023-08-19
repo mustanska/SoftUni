@@ -169,7 +169,63 @@ class TestCustomList(TestCase):
         self.assertEqual(expected, self.custom_list.list)
         self.assertEqual(0, self.custom_list.list[0])
 
-    
+    def test_dictionize_method(self):
+        result = self.custom_list.dictionize()
+        expected = {1: "hello", 3: [2, 3, 4], 5.5: 8, (1, "me"): 3, -2: " "}
+        self.assertEqual(expected, result)
+
+    def test_move_n_elements_in_list(self):
+        result = self.custom_list.move(10)
+        expected = [1, "hello", 3, [2, 3, 4], 5.5, 8, (1, "me"), 3, -2]
+        self.assertEqual(expected, result)
+        self.assertEqual(expected, self.custom_list.list)
+
+        result = self.custom_list.move(3)
+        expected = [[2, 3, 4], 5.5, 8, (1, "me"), 3, -2, 1, "hello", 3]
+        self.assertEqual(expected, result)
+        self.assertEqual(expected, self.custom_list.list)
+
+        result = self.custom_list.move(-3)
+        expected = [1, "hello", 3, [2, 3, 4], 5.5, 8, (1, "me"), 3, -2]
+        self.assertEqual(expected, result)
+        self.assertEqual(expected, self.custom_list.list)
+
+    def test_sum_values_of_elements_in_list(self):
+        result = self.custom_list.sum()
+        self.assertEqual(28.5, result)
+
+        self.custom_list.clear()
+        result = self.custom_list.sum()
+        self.assertEqual(0, result)
+
+    def test_overbound(self):
+        result = self.custom_list.overbound()
+        self.assertEqual(5, result)
+
+    def test_underbound(self):
+        result = self.custom_list.underbound()
+        self.assertEqual(8, result)
+
+    def test_list_sort_method(self):
+        result = self.custom_list.sort()
+        expected = [-2, 1, (1, "me"), 3, [2, 3, 4], 3, "hello", 5.5, 8]
+        self.assertEqual(expected, result)
+        self.assertEqual(expected, self.custom_list.list)
+
+        result = self.custom_list.sort(reverse=True)
+        expected = [8, 5.5, "hello", 3, [2, 3, 4], 3, (1, "me"), 1, -2]
+        self.assertEqual(expected, result)
+        self.assertEqual(expected, self.custom_list.list)
+
+        self.custom_list.clear()
+        result = self.custom_list.sort()
+        self.assertEqual([], result)
+        self.assertEqual([], self.custom_list.list)
+
+    def test_represent_list(self):
+        result = self.custom_list.__repr__()
+        expected = "[1, hello, 3, [2, 3, 4], 5.5, 8, (1, 'me'), 3, -2]"
+        self.assertEqual(expected, result)
 
 if __name__ == "__main__":
     main()
