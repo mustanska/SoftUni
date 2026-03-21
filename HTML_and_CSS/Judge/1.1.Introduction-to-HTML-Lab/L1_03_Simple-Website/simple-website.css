@@ -1,0 +1,37 @@
+body{
+    margin: auto;
+}
+nav, footer{
+    background-color: rgb(59, 93, 140);
+    height: auto;
+}
+ul, footer{
+    text-align: center;
+    list-style-type: none;
+}
+ul li{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+ul li a, footer{
+    text-decoration: none;
+    color: white;
+}
+section{
+    margin: 0 280px;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+article header p{
+    font-style: italic;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}

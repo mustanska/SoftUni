@@ -1,0 +1,20 @@
+body{
+    margin: auto;
+}
+nav{
+    background-color: rgb(59, 93, 140);
+    height: auto;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+ul li{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}

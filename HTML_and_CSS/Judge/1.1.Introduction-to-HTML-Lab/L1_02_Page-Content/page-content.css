@@ -1,0 +1,10 @@
+section{
+    margin: 0 330px;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+article header p{
+    font-style: italic;
+}
