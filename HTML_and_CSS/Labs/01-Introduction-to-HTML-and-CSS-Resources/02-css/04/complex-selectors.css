@@ -1,0 +1,29 @@
+nav ul li a{
+    color: blue;
+    text-decoration: none;
+}
+nav ul>li.home a{
+    font-weight: bold;
+}
+nav ul>li.services a{
+    font-style: italic;
+}
+header h1>span{
+    color:brown;
+    font-weight:bolder;
+    margin: 0;
+}
+div > section.services-desc{
+    margin: 20px 0;
+    background-color:lightsteelblue;
+}
+div section + article{
+    margin: 20px 0;
+}
+footer ul> li:first-child{
+    max-width: 300px;
+    border: 10px solid brown;
+}
+footer ul> li:first-child img{
+    width: 100%;
+}

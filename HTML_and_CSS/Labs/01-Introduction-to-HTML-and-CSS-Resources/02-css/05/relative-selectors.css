@@ -1,0 +1,27 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section p{
+    color: gray;
+}
+ul>li{
+    font-weight: bold;
+    padding: 5px;
+    list-style-type: none;
+}
+ul>li#item2{
+    color: chocolate;
+}
+ul>li a{
+    color: blue;
+    text-decoration: none;
+}
+ul.links>li:last-child a{
+    color: green;
+}
+article+article:last-child{
+    background-color:lightcoral;
+}
+h2~div{
+    color: blue;
+}

@@ -1,0 +1,17 @@
+div p{
+    border: 2px solid black;
+    padding: 1em;
+}
+.fixed p{
+    width: 300px;
+}
+.percentage p{
+    width: 50%;
+}
+.viewport p{
+    width: 50vw;
+}
+.min-max p{
+    min-width: 100px;
+    max-width: 300px;
+}

@@ -1,0 +1,31 @@
+p.highlighted{
+    color:cornflowerblue;
+    font-size: 20px;
+}
+div#special-div{
+    background-color:gold;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #ddd;
+}
+ul > li.item1{
+    color: cyan;
+}
+ul > li.item3{
+    font-weight: bold;
+    font-style: italic;
+    color: crimson;
+}
+a{
+    display: block;
+    color: blue;
+    margin: 20px 0;
+}
+a.softuni{
+    color: darkorange;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+p.special-p{
+    color: blue;
+    font-size: 16px;
+}
