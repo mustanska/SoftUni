@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+            <legend>Contact</legend>
+
+            <p class="field">
+                <input type="text" name="name" id="name" aria-describedby="name-help">
+                 <label for="name">Your Name</label>
+                 <small id="name-help">First and Last name is enough</small>
+            </p>
+
+            <p class="field">
+                <input type="email" name="email" id="email" aria-describedby="email-help">
+                 <label for="email">Email</label>
+                 <small id="email-help">example: john.doe@gmail.com</small>
+            </p>
+
+            <p class="field">
+                <input type="subject" name="subject" id="subject" aria-describedby="subject-help">
+                <label for="subject">Subject</label>
+                <small id="subject-help">What is this about?</small>
+            </p>
+
+            <p class="field">
+                <textarea name="message" id="message" aria-describedby="message-help"></textarea>
+                <label for="message">Message</label>
+                <small id="message-help">Let us know you need</small>
+            </p>
+
+            <input type="submit" value="Send">
+        </fieldset>
+
+    </form>
+</body>
+</html>

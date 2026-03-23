@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+section {
+    width: 95%;
+    margin: 2rem auto;
+    border: 2px solid #bbb;
+    border-radius: 0.3em;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+    padding: 0.5em 0;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.3em 0.3em #ddd;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #bbb;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.container {
+    padding: 10px 0;
+    position: relative;
+    background-color: inherit;
+    width: 47%;
+    display: flex;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 3px solid #FF9F55;
+    border-radius: 50%;
+    z-index: 1;
+    top: 2.5em;
+}
+
+.left::after {
+    border: 3px solid white;
+    background-color: #3fbb3b;
+    right: -3.7em;
+}
+
+.right::after {
+    border: 3px solid white;
+    background-color: #FF9F55;
+    left: -3em;
+}
+
+.left {
+    left: 0;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.right {
+    left: 50%;
+    margin-left: 2em;
+}
+
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    margin: 1em 0;
+    box-shadow: 0 0 0.3em 0.3em #ddd;
+}
+
+@media(max-width:800px) {
+    .left::after {
+        right: -2.7em;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        font-size: 13px;
+    }
+
+    .timeline::after {
+        left: 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .left {
+        margin-left: 2em;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .left::after{
+        left: -3em;
+    }
+}
+
+@media(max-width:400px){
+    .timeline{
+        max-width: 19rem;
+    }
+    h2{
+        padding: 1.5em;
+    }
+    .container{
+        width: 92%;
+    }
+}

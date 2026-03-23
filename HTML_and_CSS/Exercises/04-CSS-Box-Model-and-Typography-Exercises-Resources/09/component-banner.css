@@ -1,0 +1,17 @@
+.banner{
+    background-image: url(./images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: max(30vh, 600px);
+    position: relative;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px 0 20px 20px;
+    width: 65%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.banner>.text-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner>.text-container p {
+    width: 100%;
+}
+
+.header,
+.title {
+    margin: 0;
+}
+
+.header {
+    color: gray;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.8em;
+}
+
+.text {
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.chat-btn {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container>img {
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}

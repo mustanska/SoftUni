@@ -1,0 +1,37 @@
+body{
+    background-color: #ddd;
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+article{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 30px;
+}
+article>div{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+}
+article>div:first-of-type, article>div:last-of-type{
+    flex: 1 1 100%;
+}
+.main{
+    flex-grow: 7;
+}
+.sidebar{
+    flex-grow: 3;
+}
+
+@media screen and (max-width: 800px){
+    .main, .sidebar{
+        flex-basis: 100%;
+    }
+}

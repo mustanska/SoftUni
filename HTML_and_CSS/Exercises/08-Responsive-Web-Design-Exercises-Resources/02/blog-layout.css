@@ -1,0 +1,64 @@
+html{
+    background-color: #eee;
+    font-family: Lato, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 10px auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 5px 5px 5px #ddd;
+}
+h1, main{
+    padding: 2rem;
+}
+h1{
+    color: forestgreen;
+    background-color: #f8f8f8;
+}
+nav, footer{
+    background-color: black;
+    opacity: 0.8;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 12%;
+}
+ul>li{
+    padding: 1em 1.5em;
+}
+ul>li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    padding: 1em;
+    text-align: center;
+}
+main{
+    display: flex;
+    gap: 1.5em;
+}
+.blog-post>h2, .blog-post>p{
+    padding-bottom: 1rem;
+}
+.blog-post>p{
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        flex-direction: column;
+    }
+}

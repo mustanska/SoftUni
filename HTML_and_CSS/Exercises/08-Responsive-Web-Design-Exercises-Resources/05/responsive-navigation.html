@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./responsive-navigation.css">
+</head>
+
+<body>
+    <article class="navigation" id="navigation">
+        <h2>Site title</h2>
+        <nav>
+            <ul>
+                <li class="hidden-item active-item"><a class="active" href="javascript:void(0);"
+                        onclick="myFunction(this)" data-text="Close Menu">Open Menu</a></li>
+                <li class="visible-item"><a href="">Home</a></li>
+                <li class="visible-item">
+                    <a href="">Products</a>
+                    <ul class="hidden-item">
+                        <li><a href="">Category 1</a></li>
+                        <li>
+                            <a href="">Category 2</a>
+                            <ul>
+                                <li><a href="">Subcategory 2 1</a></li>
+                                <li>
+                                    <a href="">Subcategory 2 2</a>
+                                    <ul>
+                                        <li><a href="">Subcategory 2 2 1</a></li>
+                                        <li><a href="">Subcategory 2 2 2</a></li>
+                                        <li><a href="">Subcategory 2 2 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Subcategory 2 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Category 3</a></li>
+                        <li><a href="">Category 4</a></li>
+                    </ul>
+                </li>
+                <li class="visible-item"><a href="">Services</a></li>
+                <li class="visible-item"><a href="">About</a></li>
+                <li class="visible-item"><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </article>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.className === "navigation") {
+                x.className += " responsive";
+            } else {
+                x.className = "navigation";
+            }
+        }
+    </script>
+</body>
+
+</html>

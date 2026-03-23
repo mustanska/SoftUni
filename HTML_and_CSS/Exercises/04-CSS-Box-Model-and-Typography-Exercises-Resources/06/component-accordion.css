@@ -1,0 +1,19 @@
+section{
+    margin: 40px auto;
+    max-width: 67rem;
+}
+details{
+    border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+summary{
+    font-weight: bold;
+    padding: 20px;
+    list-style-type: '> ';
+}
+details[open] > summary {
+  list-style-type: 'v ';
+}
+p{
+    padding: 0 20px 10px 20px;
+}

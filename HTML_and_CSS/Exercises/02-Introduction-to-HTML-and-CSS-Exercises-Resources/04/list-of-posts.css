@@ -1,0 +1,10 @@
+article header p.information-about-post{
+    color: gray;
+}
+p.information-about-post time{
+    font-style: italic;
+
+}
+p.information-about-post span{
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <form action="">
+
+        <h2>Registration</h2>
+
+        <fieldset>
+            <legend>Login information</legend>
+
+            <p class="field">
+                <input type="email" name="email" id="email" aria-describedby="email-help" required>
+                 <label for="email">Email</label>
+                 <small id="email-help">example: john.doe@gmail.com</small>
+            </p>
+
+            <p class="field">
+                <input type="password" name="password" id="password" aria-describedby="pass-help" minlength="6" required>
+                <label for="password">Password</label>
+                <small id="pass-help">minimum 6 characters, letters and numbers, at least 1 special character</small>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional information</legend>
+
+            <p class="field">
+                <input type="date" name="date" id="date" aria-describedby="date-help" required>
+                 <label for="date">Date of Birth</label>
+                 <small id="date-help">example: 01/01/2026</small>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+</body>
+</html>

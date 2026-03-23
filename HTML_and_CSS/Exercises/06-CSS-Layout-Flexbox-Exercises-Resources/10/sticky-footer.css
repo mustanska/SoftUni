@@ -1,0 +1,16 @@
+div{
+    border: 3px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 40rem;
+    
+}
+div section{
+    border: 3px solid blue;
+    margin: 15px 30px;
+    padding: 10px 20px;
+}
+.main{
+    flex-grow: 1;
+}

@@ -1,0 +1,25 @@
+nav{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #dddddd92;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding: 8px;
+    margin: auto;
+    gap: 8px;
+}
+li{
+    padding: 5px 10px; 
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: white;
+}
+li>a{
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+}

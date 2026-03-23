@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    padding-left: 40px;
+}
+ul li{
+    list-style-type: none;
+    padding: 10px 0 0 5px;
+    display: flex;
+}
+summary{
+    display: flex;
+    cursor: pointer;
+}
+.tree ul{
+    padding-left: 0;
+}
+.tree ul>li{
+    border-left: 4px solid #ddd;
+}
+.tree ul>li:last-of-type{
+    border-color: transparent;
+}
+.tree ul>li::before{
+    content: "";
+    position: relative;
+    border: solid #ddd;
+    border-width: 0 0 4px 4px;
+    align-self: flex-start;
+    flex: 0 0 1.6em;
+    height: 1.1em;
+    top: -0.7em;
+    left: -0.56em;
+}
+.tree ul>li:last-child::before{
+    border-bottom-left-radius: 0.5em;
+}
+.tree details>summary::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "+";
+    color: white;
+    background-color: #696;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    margin: 0 0.4em -0.3em -0.8em;
+    z-index: 1;
+    position: relative;
+    top: -0.3em;
+}
+.tree details[open]>summary::before{
+    content: "-";
+}
+.tree ul:first-of-type li:last-child{
+    padding-bottom: 20px;
+}

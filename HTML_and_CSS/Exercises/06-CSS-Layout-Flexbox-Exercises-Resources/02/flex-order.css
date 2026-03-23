@@ -1,0 +1,38 @@
+body{
+    background-color: #ddd;
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+article{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 30px;
+}
+article>div{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+}
+article>div:nth-child(2){
+    flex-basis: 70%;
+}
+article>div:nth-child(3){
+    flex-basis: 22%;
+}
+.second>div:last-of-type{
+    order: 3;
+}
+.second>div:nth-child(2){
+    order: 3;
+}
+.second>div:nth-child(3){
+    order: 2;
+}

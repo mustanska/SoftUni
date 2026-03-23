@@ -1,0 +1,28 @@
+section{
+    border: 1px dashed black;
+    padding: 0 30px 30px 30px;
+    margin: 0;
+}
+section p{
+    margin: 0;
+    padding-bottom: 14px;
+}
+.margin{
+    width: 30%;
+    margin: auto;
+    background-color: tomato;
+}
+.border{
+    background-color: bisque;
+}
+.padding{
+    background-color:darkseagreen;
+}
+.content{
+    background-color: deepskyblue;
+    padding: 10px;
+}
+.content p{
+    padding: 0;
+    text-align: center;
+}

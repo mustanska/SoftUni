@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 14px/1.5 Lato, sans-serif;
+}
+section{
+    border: 2px solid green;
+    width: 100vw;
+}
+section article{
+    border: 2px solid blue;
+    margin: 1em;
+    padding: 2em calc((100vw - 66vw)/2 - 1em);
+}
+section article p{
+    width: 66vw;
+}
+section article .header{
+    font-weight: bold;
+}
+@media(max-width:800px){
+    section article{
+        padding: 2em 0;
+    }
+    section article p{
+        width: calc(100vw - 2em);
+    }
+
+}

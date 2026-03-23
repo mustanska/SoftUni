@@ -1,0 +1,111 @@
+body {
+    background-color: #ddd;
+    font: 25px/1.5 Lato, sans-serif;
+
+}
+
+.banner {
+    background-color: white;
+    max-width: 1100px;
+    min-height: 50vh;
+    padding: 2em;
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    gap: 2em;
+}
+
+.banner>.text-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner>.text-container p {
+    width: 100%;
+}
+
+.header,
+.title {
+    margin: 0;
+}
+
+.header {
+    color: gray;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+.text {
+    font-size: 1em;
+    margin: 10px 0 30px 0;
+    opacity: 0.7;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.chat-btn {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.img-container {
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    flex: 0 0 19em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3em;
+}
+
+.img-container>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media(min-width:800px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media(min-width:600px) {
+    body {
+        font-size: 14px;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 0;
+    }
+    .img-container{
+        order: -1;
+    }
+}
+
+@media(min-width:400px) {
+    body {
+        font-size: 13px;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 0;
+    }
+    .img-container{
+        order: -1;
+    }
+}
