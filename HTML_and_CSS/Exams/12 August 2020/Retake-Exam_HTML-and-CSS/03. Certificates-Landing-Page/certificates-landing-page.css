@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+p,
+span,
+button {
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    background-image: url('./images/hero-certificates.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+header nav,
+header .certificates,
+header>p {
+    position: relative;
+    z-index: 1;
+}
+
+header nav {
+    padding: 0 1em;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.592);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em
+}
+
+header nav img {
+    width: 10%;
+    height: 6vh;
+}
+
+header ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style-type: none;
+    padding: 1.4em 0.5em;
+
+}
+
+.active {
+    border-top: 3px solid rgb(66, 171, 248);
+    padding-top: calc(1.4em - 3px);
+}
+
+.profile {
+    background-color: rgb(66, 171, 248);
+    box-shadow: 0 0 1em 0 #ccc;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.3em;
+}
+
+header .certificates {
+    width: 90%;
+    margin: 5em auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .certificates .certificates-text {
+    width: 55%;
+    color: white;
+    padding: 1em;
+    background-color: rgb(41, 57, 75);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 #ccc;
+}
+
+header .certificates .certificates-text p {
+    margin: 1em 0;
+}
+
+header>p {
+    width: 95%;
+    margin: auto;
+    padding: 2em 3.5em;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+header .certificates .certificates-img img {
+    box-shadow: 0 0.5em 0.5em 0 #ccc;
+}
+
+header .certificates .certificates-img img:first-of-type {
+    position: relative;
+    left: 4px;
+}
+
+main,
+footer {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 2.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-logo {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+footer .footer-logo img {
+    width: 20%;
+}
+
+footer .footer-logo p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+footer .footer-navigation ul {
+    display: flex;
+    gap: 0.5em;
+}
+
+footer .footer-navigation ul li {
+    list-style-type: none;
+}
+
+footer .footer-navigation ul li i {
+    padding-right: 0.5em;
+}
+
+main {
+    padding: 2.5em 0;
+}
+
+main .diploma {
+    padding: 2.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .diploma h2 {
+    margin: auto;
+    padding: 1em 0;
+}
+
+main .diploma article {
+    background-color: rgb(244, 245, 247);
+    padding: 1em 1em 1.5em 1em;
+    box-shadow: 0 0 0.5em 0 #ccc;
+}
+
+main .diploma article p {
+    margin-bottom: 1em;
+}
+
+main .diploma>p {
+    padding: 1em 0;
+}
+
+main .start-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./images/sign-up-prompt-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 0.5em;
+    overflow: hidden;
+    color: white;
+    padding: 2.5em 15em;
+    text-align: center;
+}
+
+main .start-program::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(50, 75, 105, 0.4);
+}
+.start-program>h2, .start-program>p, .start-program>article{
+    position: relative;
+    z-index: 1;
+}
+main .start-program>p{
+    padding: 1em 0 2em;
+}
+main .start-program>article button{
+   border: 1px solid white;
+   background: none;
+   color: white;
+   padding: 0.5em 2em;
+   border-radius: 0.5em;
+   margin: 0 2em;
+}
+main .start-program .apply-btn{
+    position: relative;
+    background-color: white;
+    color: rgb(66, 171, 248);
+}
+main .start-program .apply-btn::after{
+    position: absolute;
+    content: "|";
+    color: white;
+    font-size: 1.5em;
+    left: 6em;
+    bottom: 0.2em;
+}
