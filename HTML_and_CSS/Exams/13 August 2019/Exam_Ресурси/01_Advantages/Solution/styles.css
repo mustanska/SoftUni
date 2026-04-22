@@ -1,0 +1,55 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+section{
+    width: 55%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section p{
+    display: inline;
+    align-self: flex-end;
+    padding: 0.5em 1em;
+    background-color: deepskyblue;
+    color: white;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+section table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    border-top-right-radius: 0;
+    overflow: hidden;
+}
+section table tr{
+    border-bottom: 1px solid white;
+}
+section table tr:last-of-type{
+    border-bottom: none;
+}
+section table td{
+    background-color: #eee;
+    padding: 1em;
+}
+.checked::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    background-color: mediumseagreen;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
