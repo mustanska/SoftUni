@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    background-image: url('./images/poster.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Karla';
+}
+header::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+header nav, header h1, header p{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+header nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+}
+header nav ul{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav img{
+    width: 80px;
+}
+header h1{
+    font-family: 'Cormorant Infant';
+    text-align: center;
+    font-size: 5em;
+}
+header p{
+    text-align: center;
+    padding: 0 25em;
+}
+.first-section, .third-section{
+    background-color: rgb(248, 240, 233);
+}
+.second-section, .fourth-section{
+    background-color: rgb(225, 71, 71);
+}
+.first-section{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 17em;
+    font-family: 'Karla';
+}
+.first-section .quote{
+    font-family: 'Cormorant Infant';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 1em 0;
+}
+.second-section{
+    font-family: 'Karla';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 35em;
+}
+.second-section h4{
+    margin: 1em 0;
+}
+.second-section p{
+    text-align: center;
+    margin: 1em 0;
+}
+.third-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 29em;
+    font-family: 'Karla';
+}
+.third-section .img{
+    width: 28em;
+}
+.third-section .img img{
+    width: 100%;
+}
+h2{
+    font-family: 'Cormorant Infant';
+    text-align: center;
+    font-size: 3.2em;
+    margin: 1em;
+}
+.third-section .text>button{
+    margin: 3em 0;
+}
+.third-section button{
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    background-color: white;
+}
+.fourth-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Karla';
+    padding: 1em 19em;
+}
+.fourth-section p{
+    text-align: center;
+}
+.fourth-section button{
+    margin: 3em 0;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(250, 216, 122);
+}
+footer{
+    background-color: rgb(53, 43, 42);
+    padding: 3em 7em;
+    font-family: 'Karla';
+}
+footer div{
+    width: 36%;
+    color: white;
+}
+footer img{
+    width: 70px;
+}
+footer p{
+    margin-top: 2em;
+}
+footer span{
+    display: inline-block;
+    margin: 1.5em 0;
+    opacity: 0.3;
+}
