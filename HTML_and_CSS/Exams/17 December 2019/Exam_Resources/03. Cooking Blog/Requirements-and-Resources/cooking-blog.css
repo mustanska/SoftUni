@@ -1,0 +1,174 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gelasio", serif;
+}
+body{
+    background-image: url("../Requirements-and-Resources/Media/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+header nav{
+    background-color: rgb(230, 227, 222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    color: rgb(80, 77, 73);
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 0.3em 1em;
+}
+header nav .nav-buttons{
+    display: flex;
+    gap: 1em;
+}
+.nav-buttons #login{
+    background-color: rgb(80, 77, 73);
+    color: white;
+    border: none;
+    padding: 0.5em;
+}
+.nav-buttons #search{
+    background-color: rgb(230, 227, 222);
+    border: none;
+}
+header section{
+    display: flex;
+    justify-content: center;
+    background-image: url("../Requirements-and-Resources/Media/craving.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+}
+header section form{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header section form .input{
+    width: 80%;
+    margin-top: 1em;
+    position: relative;
+}
+header section form .input input{
+     width: 100%;
+      opacity: 0.7;
+      padding: 0.4em 0 0.4em 2.4em;
+      border: none;
+}
+header section form .input i{
+    position: absolute;
+    top: 0.4em;
+    left: 0.4em;
+    color: gray;
+    z-index: 1;
+}
+main{
+    margin-top: 2rem;
+}
+main section{
+    width: 80%;
+    margin: 2em auto;
+}
+main .first-style{
+    display: flex;
+    align-items: center;
+    background-color: rgb(230, 227, 222);
+}
+main .first-style .image{
+    width: 65%;
+    height: 500px;
+}
+main .first-style .image img{
+    width: 100%;
+    height: 100%;
+}
+main .first-style .text{
+    width: 35%;
+    text-align: center;
+    padding: 1em;
+}
+main .first-style .text p{
+    font-weight: bold;
+    font-size: 18px;
+}
+main .first-style .text button{
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
+    background-color: rgb(80, 77, 73);
+}
+main .first-style.second-wrapper{
+    flex-direction: row-reverse;
+}
+main .second-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .second-style h3{
+    background-color: rgb(230, 227, 222);
+    opacity: 0.7;
+    padding: 0.5em 2em;
+}
+main .second-style .tools{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 3em;
+}
+main .second-style .tools article{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+main .second-style .tools article img{
+    width: 100%;
+}
+main .second-style .tools article p{
+    background-color: rgb(230, 227, 222);
+    opacity: 0.7;
+    text-align: center;
+    padding: 0.5em;
+    font-style: italic;
+}
+main .second-style button{
+    color: white;
+    padding: 0.5em 6em;
+    border: none;
+    margin-top: 2em;
+    background-color: rgb(218, 76, 52);
+}
+footer{
+    padding: 1rem 0.5rem;
+    background-color: rgb(230, 227, 222);
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul{
+    display: flex;
+    padding: 1em 0;
+}
+footer ul li{
+    padding: 0 1em;
+    list-style-type: none;
+    border-right: 1px solid black;
+}
+footer ul li:last-of-type{
+    border-right: none;
+}
