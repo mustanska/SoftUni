@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+header{
+    background-color: rgb(241, 149, 178);
+    position: relative;
+    padding-bottom: 1.5em;
+}
+.little-nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+.little-nav .help{
+    margin-bottom: 0.5em;
+}
+.little-nav .help li{
+    padding: 0 0.5em;
+}
+.little-nav .help li:nth-child(2)::before{
+    content: "|";
+    padding-right: 1em;
+}
+.little-nav .help li:nth-child(2)::after{
+    content: "|";
+    padding-left: 1em;
+}
+.little-nav .icons{
+    gap:2em;
+}
+.big-nav{
+    position: absolute;
+    top: 4.5em;
+    left: 15%;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 2em;
+    padding: 0 8em;
+    z-index: 1;
+}
+.big-nav ul{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: rgb(241, 149, 178);
+    font-size: 2.5em;
+    padding: 0 0.5em;
+    font-weight: bold;
+}
+.logo>span{
+    color: rgb(98, 195, 231);
+}
+.first-wrapper{
+    position: relative;
+    min-height: 130vh;
+    background-image: url("./images/carousel-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #ccc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-wrapper::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.first-wrapper>h1, 
+.first-wrapper h4, 
+.first-wrapper button{
+    position: relative;
+    z-index: 1;
+}
+.first-wrapper>h1{
+    font-size: 4em;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+h4{
+    font-size: 1.3em;
+}
+button{
+    background-color: rgb(241, 149, 178);
+    border: none;
+    border-radius: 2em;
+    color: white;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+}
+.second-wrapper{
+    background-color: rgb(200, 231, 248);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 3.5em;
+    position: relative;
+}
+.second-wrapper .articles{
+    margin-top: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.second-wrapper hr{
+    position: absolute;
+    background-color: rgb(241, 149, 178);
+    width: 5%;
+    height: 3px;
+    border: none;
+    top: 3em;
+}
+.second-wrapper h4{
+    margin: 0.5em 0;
+}
+.second-wrapper article{
+    width: 20%;
+}
+.second-wrapper .img img{
+    width: 100%;
+}
+.second-wrapper .bold{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+.second-wrapper .normal{
+    font-size: 0.75em;
+    padding-bottom: 0.5em;
+}
+.second-wrapper .about>button{
+    background-color: rgb(98, 195, 231);
+}
+.second-wrapper .features>.bold::before{
+    content: "✓";
+    color: rgb(98, 195, 231);
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+}
+footer ul{
+    gap:0.4em;
+    padding: 1em 0;
+}
+footer ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(98, 195, 231);
+    width: 35px;
+    height: 35px;
+    border: 3px solid rgb(200, 231, 248);
+    border-radius: 50%;
+    font-size: 0.8em;
+}
+footer section{
+    display: flex;
+}
+footer section article{
+    padding: 0.5em 1em;
+}
+footer section article p{
+    margin-top: 0.5em;
+    font-size: 0.7em;
+}
+footer section article:first-of-type{
+    text-align: right;
+    border-right: 1px solid black;
+}
+footer>p{
+    margin-top: 1em;
+    font-size: 0.7em;
+}
+footer>p span{
+    color: rgb(241, 149, 178);
+}
