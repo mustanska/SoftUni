@@ -1,0 +1,40 @@
+@media(max-width:768px){
+    .main-movie ul{
+        align-items: center;
+    }
+    .main-movie ul li{
+        padding: 0;
+    }
+    .main-movie-poster{
+        display: none;
+    }
+    .main-movie-trailer iframe{
+        width: 550px;
+        height: 310px;
+    }
+    .movies{
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .movie{
+        height: 200px;
+    }
+}
+
+@media(max-width:415px){
+    .main-movie-trailer iframe{
+        width: 414px;
+        height: 315px;
+    }
+    .movie-list{
+        flex-direction: column;
+    }
+    .movie{
+        width: 75%;
+        height: 330px;
+        margin: auto;
+    }
+    .movies{
+        margin-bottom: 50px;
+    }
+}
