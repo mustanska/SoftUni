@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+header nav ul li{
+    list-style-type: none;
+    color: gray;
+    font-weight: bold;
+}
+.first-style{
+    padding: 3em 0;
+    display: flex;
+    align-items: center;
+}
+.first-style .img{
+    width: 50%;
+}
+.first-style .img img{
+    width: 100%;
+}
+.first-style .text{
+    width: 50%;
+    padding: 0 2em 0 5em;
+}
+.first-style p{
+    padding: 2em 0;
+    font-size: 1.3em;
+}
+.first-style button{
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 1em 3em;
+    border-radius: 2em;
+}
+.first-wrapper h2{
+    font-weight: 400;
+    font-size: 3em;
+}
+.second-wrapper{
+    flex-direction: row-reverse;
+    background-color: rgb(251, 252, 255);
+}
+.second-wrapper .title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.second-wrapper h2{
+    font-size: 4em;
+    font-weight: 400;
+}
+.second-wrapper .title span{
+    align-self: flex-end;
+}
+.second-wrapper .text{
+    padding: 0 4em;
+}
+.second-wrapper .text p{
+    margin: 3em 0;
+}
+.second-wrapper .text .price{
+    display: flex;
+    justify-content: baseline;
+    gap: 2em;
+}
+.second-wrapper .text .price span{
+    font-weight: bold;
+    font-size: 2em;
+}
+.second-style{
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2em 0;
+}
+.second-style .title{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+.second-style .title img{
+    width: 4em;
+}
+.second-style .title p{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+.second-style a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid white;
+}
+.third-style{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+}
+.third-style .beats-girl-img{
+    width: 50%;
+}
+.third-style .beats-girl-img img{
+    width: 100%;
+    height: 100%;
+}
+.third-style .text, .third-style .beats-red-img{
+    align-self: center;
+}
+.third-style .text{
+    margin-left: 2em;
+    width: 25%;
+}
+.third-style .text h2{
+    font-size: 9em;
+}
+.third-style .text p{
+    font-size: 3em;
+    font-weight: 100;
+}
+.third-style .text p>b{
+    font-weight: bold;
+    color: red;
+}
+footer{
+    text-align: center;
+    padding: 1.3em 0;
+    font-size: 1.3em;
+    color: gray;
+}
