@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+ul li {
+    list-style-type: none;
+}
+
+button {
+    border-radius: 0.3em;
+    padding: 1em 2em;
+    border: none;
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 1.5em 3em 1em 4em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav button {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+}
+
+.first-wrapper {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 1em 15em;
+    display: flex;
+    align-items: center;
+    height: 86vh;
+}
+
+.first-wrapper article {
+    width: 58%;
+}
+
+.first-wrapper article h1 {
+    font-size: 2.5em;
+    margin: 1.8em 0;
+}
+
+.first-wrapper article p {
+    color: white;
+    font-weight: bold;
+}
+
+.first-wrapper article button {
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    margin: 3.5em 0;
+}
+
+.second-wrapper {
+    padding: 1.5em;
+}
+
+.second-wrapper ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second-wrapper ul li {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-wrapper ul li h2 {
+    font-size: 2.4em;
+    margin: 1em;
+    color: rgb(255, 124, 76);
+}
+
+.second-wrapper ul li p {
+    font-weight: 600;
+}
+
+.second-wrapper ul li span {
+    font-size: 0.7em;
+    opacity: 0.7;
+    margin: 0.5em 0;
+}
+
+.third-wrapper {
+    background-color: rgb(217, 217, 217);
+    padding: 2em 3em;
+}
+
+.third-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.third-wrapper ul li {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.third-wrapper ul li .img-container {
+    width: 30%;
+}
+
+.third-wrapper ul li .img-container img {
+    width: 100%;
+}
+
+.third-wrapper ul li .text-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.third-wrapper .little-title {
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.third-wrapper .text p,
+.third-wrapper span {
+    opacity: 0.7;
+}
+
+.third-wrapper .text a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.fourth-wrapper {
+    background-color: rgb(245, 245, 245);
+}
+
+.fourth-wrapper .pricing-plan {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+}
+
+.fourth-wrapper .pricing-plan .plans-text {
+    width: 35%;
+}
+
+.plans-text h2 {
+    margin: 1em 0 1.5em;
+}
+
+.plans-text p {
+    margin: 1em 0;
+    font-size: 0.95em;
+    opacity: 0.7;
+}
+
+.plans {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    padding: 2em;
+    box-shadow: 0 0 1em 0 gray;
+}
+.plans p{
+    font-weight: 300;
+}
+.plans b{
+    font-weight: 600;
+}
+.plans button{
+    margin-top: 2em;
+}
+.plans .pricing{
+    font-size: 3em;
+}
+.plans.free{
+    background-color: rgb(255, 124, 76);
+}
+.plans.free button{
+    background-color: black;
+    color: white;
+}
+.plans.paid{
+    background-color: black;
+    color: white;
+}
+.plans.paid button{
+    background-color: white;
+}
+footer{
+    background-color: rgb(217, 217, 217);
+    padding: 1.5em;
+}
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+}
