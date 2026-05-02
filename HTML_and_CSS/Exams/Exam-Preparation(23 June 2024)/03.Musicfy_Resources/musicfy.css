@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat';
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 3rem;
+    padding: 1em 0;
+    font-size: 14px;
+}
+
+nav {
+    background-color: black;
+    height: 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    color: white;
+    list-style-type: none;
+    padding: 0.5em 1em;
+}
+
+.plans {
+    background-color: rgb(29, 185, 84);
+    position: relative;
+    padding-top: 2em;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 20em;
+}
+
+.plans h4 {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.plans .music-img {
+    position: absolute;
+    left: 0;
+    top: 2em;
+}
+
+.plans .music-img img {
+    width: 60%;
+}
+
+.plans article {
+    height: 55vh;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 0 0 1em 0 black;
+    border-radius: 0.5em;
+    background-color: white;
+    width: 25%;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 6em;
+}
+
+.plans article h3 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: auto;
+    opacity: 0.8;
+}
+
+.plans article ul {
+    padding: 0 1em 0 3em;
+}
+
+.plans article ul li {
+    list-style-type: circle;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    opacity: 0.6;
+}
+
+.plans article button {
+    background-color: rgb(29, 185, 84);
+    color: white;
+    border: none;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    margin: 1.5em auto;
+}
+
+.plans article footer {
+    font-size: 17px;
+    padding: calc((3rem - 29px)/2) 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plans article footer p {
+    padding: 6px;
+}
+
+.plans article:first-of-type footer p:first-of-type {
+    border-right: 1px solid white;
+}
+
+.payment-advantages {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 5em;
+}
+
+.payment-advantages div {
+    width: 57%;
+}
+
+.payment-advantages div p {
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.payment-advantages .payment-img {
+    width: 25%;
+}
+
+.payment-advantages .payment-img img {
+    width: 100%;
+}
+
+.premium-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premium-benefits h2 {
+    font-size: 30px;
+}
+
+.premium-benefits p {
+    font-size: 12px;
+    padding: 2em;
+}
+
+.premium-benefits table {
+    width: 60%;
+    border-radius: 0.5em;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.premium-benefits table tr {
+    background-color: rgb(129, 216, 160);
+    font-size: 13px;
+}
+
+.premium-benefits table tr:nth-child(odd) {
+    background-color: #cccbcb;
+}
+
+.premium-benefits table td {
+    padding: 0.5em;
+}
